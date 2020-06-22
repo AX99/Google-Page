@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Google</title>
   <link rel="stylesheet" href="CSS/style.css">
+  <link rel="icon" href="Images/google-favicon.png">
 </head>
 <body>
   <!-- <div id="container"> -->
@@ -42,8 +43,7 @@
        </div>
       </div>
     </div>
-
-
+  
 <!--Central div-->
     <div class="center_div">
       <!--Div for logo-->
@@ -53,15 +53,15 @@
       <!--Div for search box-->
       <div>
         <div class="search_box">
-          <input title="Search" type="text" width="480px" autofocus>
+          <input id="text_input" title="Search" type="text" width="480px" autofocus>
           <a href="#"><img src="Images/Google_mic.png" alt=""></a>
         </div>
       </div>
       <!--Div for search buttons-->
       <div class="buttons_div">
           <center>
-            <input value="Google Search" type="submit">
-            <input value="I'm Feeling Lucky" type="submit">
+            <input id="search" value="Google Search" type="submit" onclick="Search()">
+            <input id="lucky" value="I'm Feeling Lucky" type="submit" onclick="Lucky()">
           </center>
       </div>
       <div class="site_link">
@@ -87,6 +87,7 @@
         </span>
       </div>
     </div>
-<!--  </div>-->
+ <!-- </div> -->
+ <script src="JS/main.js"></script>
 </body>
 </html>
